@@ -38,7 +38,6 @@ public class ListMaker {
             }
             System.out.println(); // spacing between loops
         } while (!quit);
-
         System.out.println("Goodbye!");
     }
 
@@ -84,7 +83,6 @@ public class ListMaker {
 
         // Prompt user for a 1-based index within the current valid range
         int targetIndex = SafeInput.getRangedInt(pipe, "Enter the item number to delete", 1, myArrList.size());
-
         // Convert user's 1-based choice back to 0-based index for ArrayList
         String removedItem = myArrList.remove(targetIndex - 1);
         System.out.println("Successfully removed: \"" + removedItem + "\"");
